@@ -1,3 +1,22 @@
-body{
-    text-align: center;
+body {
+    background-color: rgb(40, 40, 40);
+    color: rgb(100, 100, 100);
+    margin: 0;
+}
+
+.wrapper {
+    margin: 0;
+}
+
+.row {
+    margin: 0;
+    font-size: 0;
+}
+
+.cell {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://www.spigotmc.org/data/avatars/m/118/118721.jpg?1446135416);
+    background-size: contain;
 }
