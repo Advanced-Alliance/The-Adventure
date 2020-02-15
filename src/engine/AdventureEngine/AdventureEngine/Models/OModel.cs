@@ -12,5 +12,6 @@ namespace AdventureEngine.Models
         private string _type;
         public string Type { get => _type; set => _type = value; }
         public OModel() { }
+   
     }
 }

@@ -7,10 +7,7 @@ namespace AdventureEngine.Models.Interface
 {
    public interface IPlayerRepository
     {
-        void Add(Player item);
         IEnumerable<Player> GetAll();
-        Player Find(int key);
-        void Remove(int key);
         void Update(Player item);
     }
 }

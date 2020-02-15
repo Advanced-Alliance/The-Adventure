@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace AdventureEngine.Models.Interface
 {
-    public interface IMoldelRepository
+    public interface ICharacterRepository
     {
-        IEnumerable<OModel> GetAll();
-        void Update(OModel item);
+        IEnumerable<Character> GetAll();
+        void Update(Character item);
     }
 }
