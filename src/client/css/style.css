@@ -11,12 +11,13 @@ body {
 .row {
     margin: 0;
     font-size: 0;
+    white-space: nowrap;
 }
 
 .cell {
     display: inline-block;
-    width: 32px;
-    height: 32px;
     background-image: url(https://www.spigotmc.org/data/avatars/m/118/118721.jpg?1446135416);
     background-size: contain;
+    width: 32px;
+    height: 32px;
 }
