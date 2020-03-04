@@ -1,18 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using AdventureEngine.Models;
 using AdventureEngine.Models.Interface;
-using Microsoft.AspNetCore.Http;
 
 namespace AdventureEngine
 {
@@ -49,19 +41,15 @@ namespace AdventureEngine
             //        + System.Diagnostics.Process.GetCurrentProcess().ProcessName);
             //});
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
+
+            app.UseDefaultFiles();
             app.UseStaticFiles();
 
             app.UseRouting();
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                     name: "default",
-                     pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
         }
     }
 }
