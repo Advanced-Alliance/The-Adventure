@@ -16,7 +16,8 @@ body {
 
 .cell {
     display: inline-block;
-    background-image: url(https://www.spigotmc.org/data/avatars/m/118/118721.jpg?1446135416);
+    background-image: url(resource\material\map\grass.jpg);
+    
     background-size: contain;
     width: 32px;
     height: 32px;
