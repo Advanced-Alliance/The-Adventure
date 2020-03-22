@@ -18,9 +18,10 @@ let userConfig = {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("adblockWarningMessage").remove();
     createMap();
     applySettings();
-
+    
 });
 
 function createMap() {
@@ -38,7 +39,6 @@ function createMap() {
         viewport.appendChild(row);
     }
 };
-
 function applySettings() {
     //document.styleSheets[1].insertRule(".cell {width: " + userConfig.squareSize + "px; height: " + userConfig.squareSize + "px;}", 0);
 
